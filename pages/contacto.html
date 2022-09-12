@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../multimedia/favicon_shine_magenta-modified.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="all__body--flex">
+    <header class="header">
+        <img class="header__logo" src="../multimedia/shine_logo.jpg" alt="logo de shine">
+        <nav>
+            <ul class="header__ul">
+                <li class="header__li"><a href="../index.html">Inicio</a></li>
+                <li class="header__li"><a href="calzado.html">Calzado</a></li>
+                <li class="header__li"><a href="aros_y_apliques.html">Aros y Apliques</a></li>
+                <li class="header__li"><a href="otros_productos.html">Otros Productos</a></li>
+                <li class="header__li"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto__main--layout">
+        <h1 class="main__h1">
+            Contacto
+        </h1>
+        <p class="main__p--form">Dudas o consultas? Completá el siguiente formulario y nos comunicamos con vos:</p>
+        <form action="" class="form">
+            <label for="nombre">Nombre:</label>
+            <input class="form__input--text" type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            <label for="email">Correo:</label>
+            <input class="form__input--text" type="email" name="email" placeholder="Ingresa tu email" required>
+            <label for="celular">Celular:</label>
+            <input class="form__input--text" type="tel" name="celular" placeholder="Ingresa tu teléfono" required>
+            <fieldset>
+                <legend>Sobre que es tu consulta?</legend>
+                <label for="tipo_de_consulta"></label>
+                <div><input type="checkbox" name="tipo_de_consulta" value="sz"> Sandalias o zapatos</div>
+                <div><input type="checkbox" name="tipo_de_consulta" value="aa"> Aros y apliques</div>
+                <div><input type="checkbox" name="tipo_de_consulta" value="dc"> Decoración con cristales</div>
+                <div><input type="checkbox" name="tipo_de_consulta" value="op"> Otros productos</div>
+            </fieldset>
+            <label for="consulta">Descripción:</label>
+            <textarea class="form__input--text" name="consulta" id="" cols="30" rows="10" placeholder="Ingresa tu consulta" required></textarea>
+            <div class="form__div--botones">
+                <input class="form__input--button input__button--reset" type="reset" name="restablecer">
+                <input class="form__input--button input__button--submit" type="submit" name="enviar">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="https://www.instagram.com/shine.bycb/" target="_blank">Seguinos en <img class="logoInstagram" src="../multimedia/icono_instagram.png" alt="logo instagram"><span>shine.bycb</span></a></p>
+    </footer>
+</body>
+
+</html>

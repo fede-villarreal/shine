@@ -1,0 +1,420 @@
+
+/* RESETEO CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    line-height: 1.4;
+}
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    height: auto;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    color: inherit;
+}
+
+
+/* ESTRUCTURA BASICA GENERAL */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: linear-gradient(135deg, hsl(283, 100%, 9%), hsl(291, 100%, 26%));
+    color: whitesmoke;
+    font-size: calc(0.8rem + 1vw);
+    min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* LAYOUT */
+
+.all__body--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.index__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 3, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__div--presentacion"
+        "main__img--inicio";
+    justify-items: center;
+    align-items: center;
+}
+.calzado__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 3, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__div--chicago"
+        "main__div--puertoRico";
+    justify-items: center;
+    align-items: center;
+}
+.aros__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 3, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__div--aros"
+        "main__div--apliques";
+    justify-items: center;
+    align-items:  center;
+}
+.productos__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 4, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__div--decoracion"
+        "main__div--pack"
+        "main__div--pgs";
+    justify-items: center;
+    align-items:  center;
+}
+.contacto__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 3, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__p--form"
+        "form";
+    justify-items: center;
+    align-items:  center;
+}
+
+
+/* HEADER */
+
+.header{
+    background-color: rgb(39, 0, 75);
+    position: sticky;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__logo{
+    width: 30%;
+    max-width: 150px;
+    border-radius: 100px 20px;
+}
+.header__ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.header__li{
+    padding: 0 0.5rem;
+}
+.header__li:hover{
+    background-color: rgb(102, 0, 115);
+}
+
+
+/* MAIN GENERAL */
+
+.main__div--color{
+    background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+.main__div--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    align-content: space-around;
+}
+.main__h1{
+    background-color: rgb(102, 0, 115);
+    font-size: calc(1.5rem + 1.5vw);
+    grid-area: main__h1;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    justify-self: stretch;
+}
+.main__h2{
+    text-align: center;
+    font-size: calc(1.5rem + 1.5vw);
+    margin: 1rem;
+}
+
+
+/* MAIN - INDEX */
+
+.main__div--presentacion{
+    grid-area: main__div--presentacion;
+    text-align: justify;
+    margin: 1rem 0;
+}
+.main__p{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.main__ul{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.main__li{
+    margin: 1rem 0;
+}
+.main__li::before{
+    content: " ";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../multimedia/icono_estrella.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: invert(0.9); /* invierte colores del icono, valores de 0 - 1 */
+    margin-right: 0.3rem;
+}
+.main__img--inicio{
+    width: 70%;
+    max-width: 600px;
+    grid-area: main__img--inicio;
+    margin: 1rem;
+}
+
+
+/* MAIN - CALZADO */
+
+.main__div--chicago{
+    grid-area: main__div--chicago;
+}
+.main__div--puertoRico{
+    grid-area: main__div--puertoRico;
+}
+/* .main__div--caribean{                
+    grid-area: main__div--caribean;
+} */
+.main__img--calzado{
+    width: 60vw;
+    max-width: 250px;
+    margin: 1rem 0;
+}
+
+
+/* MAIN - AROS Y APLIQUES */
+
+.main__div--aros{
+    grid-area: main__div--aros;
+}
+.main__div--apliques{
+    grid-area: main__div--apliques;
+}
+.main__div--arosBackground{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: calc(1rem + 1vw) ;
+    margin: 1rem 0.5rem;
+    text-shadow: 1px 1px 5px rgb(255, 225, 52);
+}
+.main__img--aros{
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+    max-width: 250px;
+    height: 50vw;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+
+/* MAIN - OTROS PORDUCTOS Y SERVICIOS */
+
+.main__div--decoracion{
+    grid-area: main__div--decoracion;
+}
+.main__h3--shadow{
+    font-size: calc(1.2rem + 1.5vw);
+    text-shadow: 1px 1px 5px rgb(255, 225, 52);
+}
+.main__img--productos{
+    margin: 1.5rem;
+    padding: 0;
+    width: auto;
+    height: 50vw;
+    max-height: 300px;
+}
+.main__div--pack{
+    grid-area: main__div--pack;
+    width: 80vw;
+    max-width: 350px;
+}
+.main__img--pack{
+    margin: 0 2rem;
+    width: 50vw;
+    max-width: 350px;
+    height: auto;
+}
+.main__div--pgs{
+    grid-area: main__div--pgs;
+}
+.main__div--colorPSG{
+    width: auto;
+    text-align: center;
+}
+.main__img--pgs{
+    height: 40vw;
+    max-height: 250px;
+    width: auto;
+}
+.div__colorPGS--figcaption{
+    width: 50vw;
+    max-width: 300px;
+}
+
+
+/* MAIN - CONTACTO */
+
+.main__p--form{
+    font-size: calc(1rem + 1vw);
+    grid-area: main__p--form;
+    margin: 2rem;
+}
+.form{
+    background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
+    padding: 5%;
+    width: 90vw;
+    max-width: 600px;
+    text-align: left;
+    font-size: calc(1rem + 0.5vw);
+    grid-area: form;
+    margin-bottom: 2rem;
+}
+.form__input--text{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: black;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.form__div--botones{
+    text-align: right;
+}
+.form__input--button{
+    background-color: rgb(102, 0, 115);
+    margin-left: 5px;
+    padding: 10px;
+}
+.form__input--button:hover{
+    background: linear-gradient(rgb(137, 0, 155), rgb(91, 0, 103));
+}
+.input__button--reset{
+    border-radius: 100px 20px 100px 150px;
+}
+.input__button--submit{
+    border-radius: 20px 100px 150px;
+}
+
+
+/* SECTION / ARTICLE */
+
+section, article{
+    text-align: center;
+    width: fit-content;
+    font-style: italic;
+    font-weight: bold;
+}
+section{
+    margin: 1rem auto 2rem auto;
+    font-family: 'Indie Flower', cursive;
+    font-size: calc(1.5rem + 1vw);
+    text-shadow: 2px 2px 5px gold;
+    grid-area: section;
+}
+article{
+    margin: 1rem auto 2rem auto;
+    border: 0.5rem dashed rgb(39, 0, 75);
+    background-color: rgb(102, 0, 115);
+    padding: 0.5rem;
+    font-size: calc(1rem + 1vw);
+    grid-area: article;
+}
+article span{
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding: 1.2rem;
+    background-color: rgb(39, 0, 75);
+    text-align: center;
+    overflow: hidden;
+}
+footer span{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+.logoInstagram{
+    width: 1rem;
+    margin: 0 0.2rem 0 0.4rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 481px) and (orientation: landscape){
+    .index__main--layout{
+        grid-template-rows: repeat( 2, auto);
+        grid-row-gap: 1rem;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas:    
+            "main__h1                   main__h1"
+            "main__div--presentacion    main__img--inicio";
+    }
+}
+
+@media screen and (min-width: 961px) and (orientation: landscape){
+    .header{
+        justify-content: space-between;
+    }
+    .header__logo{
+        margin: 1rem 0 1rem 5rem;
+    }
+    .header__ul{
+        flex-direction: row;
+        margin-right: 3rem;
+    }
+    .header__li{
+        margin: 0.2rem;
+    }
+}
