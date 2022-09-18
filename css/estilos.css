@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6{
 
 .header{
     background-color: rgb(39, 0, 75);
-    position: sticky;
+    /* position: sticky;
     z-index: 2;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
 }
 .header__logo{
     width: 30%;
@@ -139,11 +139,9 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
     align-items: flex-start;
 }
-.header__li{
-    padding: 0 0.5rem;
-}
 .header__li:hover{
     background-color: rgb(102, 0, 115);
+    padding: 0 0.5rem;
 }
 
 
@@ -409,6 +407,12 @@ footer p:hover{
         grid-template-areas:    
             "main__h1                   main__h1"
             "main__div--presentacion    main__img--inicio";
+    }
+}
+
+@media screen and (min-width: 961px){
+    .header__li:hover{
+        padding: 0;
     }
 }
 
