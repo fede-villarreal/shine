@@ -122,22 +122,17 @@ h1, h2, h3, h4, h5, h6{
 
 .header{
     background-color: rgb(39, 0, 75);
-    /* position: sticky;
-    z-index: 2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; */
 }
 .header__logo{
     width: 30%;
     max-width: 150px;
     border-radius: 100px 20px;
 }
-.header__ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.header__titulo--menu{
+    font-size: calc(1.5rem + 1vw);
+}
+.header__li{
+    font-size: calc(1rem + 1vw);
 }
 .header__li:hover{
     background-color: rgb(102, 0, 115);
@@ -411,6 +406,9 @@ footer p:hover{
 }
 
 @media screen and (min-width: 961px){
+    .header__li{
+        font-size: calc(0.8rem + 1vw);
+    }
     .header__li:hover{
         padding: 0;
     }
