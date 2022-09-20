@@ -337,9 +337,14 @@ h1, h2, h3, h4, h5, h6{
     max-height: 250px;
     width: auto;
 }
+.main__div--colorPSG ul{
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
 .div__colorPGS--figcaption{
     width: 50vw;
     max-width: 300px;
+    margin-top: 1rem;
 }
 
 
