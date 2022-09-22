@@ -27,9 +27,6 @@ ul, ol{
 a{
     text-decoration: none;
 }
-a:active{
-    background: rgb(102, 0, 115);
-} /* Modifica el color al hacer clic en un link */
 form, input, textarea, select, button, label{
     font-family: inherit;
     font-size: inherit;
