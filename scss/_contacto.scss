@@ -14,45 +14,44 @@
 
 
 /* MAIN - CONTACTO */
-main{
-    &__p--form{
-        font-size: calc(1rem + 1vw);
-        grid-area: main__p--form;
-        margin: 2rem;
+
+.main__p--form{
+    font-size: calc(1rem + 1vw);
+    grid-area: main__p--form;
+    margin: 2rem;
+}
+.form{
+    background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
+    padding: 5%;
+    width: 90vw;
+    max-width: 600px;
+    text-align: left;
+    font-size: calc(1rem + 0.5vw);
+    grid-area: form;
+    margin-bottom: 2rem;
+    &__input--text{
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        color: black;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
-    .form{
-        background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
-        padding: 5%;
-        width: 90vw;
-        max-width: 600px;
-        text-align: left;
-        font-size: calc(1rem + 0.5vw);
-        grid-area: form;
-        margin-bottom: 2rem;
-        &__input--text{
-            display: block;
-            width: 100%;
-            margin-bottom: 1.5rem;
-            color: black;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+    &__divBotones{
+        text-align: right;
+        &--button{
+            background-color: rgb(102, 0, 115);
+            margin-left: 5px;
+            padding: 10px;
+            &:hover{
+                background: linear-gradient(rgb(137, 0, 155), rgb(91, 0, 103));
+            }
         }
-        &__divBotones{
-            text-align: right;
-            &--button{
-                background-color: rgb(102, 0, 115);
-                margin-left: 5px;
-                padding: 10px;
-                &:hover{
-                    background: linear-gradient(rgb(137, 0, 155), rgb(91, 0, 103));
-                }
-            }
-            &--reset{
-                border-radius: 100px 20px 100px 150px;
-            }
-            &--submit{
-                border-radius: 20px 100px 150px;
-            }
+        &--reset{
+            border-radius: 100px 20px 100px 150px;
+        }
+        &--submit{
+            border-radius: 20px 100px 150px;
         }
     }
 }

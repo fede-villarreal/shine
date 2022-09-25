@@ -1,87 +1,133 @@
 /* LAYOUT INDEX */
 
-.index__main--layout{
+.index__main--layout {
     display: grid;
-    grid-template-rows: repeat( 3, auto);
+    grid-template-rows: repeat(3, auto);
     grid-row-gap: 1rem;
-    grid-template-areas:    
+    grid-template-areas:
         "main__h1"
         "div__presentacion"
         "main__img--inicio";
     justify-items: center;
     align-items: center;
-} /* Layout del main del index */
+}
+
+/* Layout del main del index */
 
 
 /* MAIN - INDEX */
 
-.main{
-    .div__presentacion{
-        grid-area: div__presentacion;
-        text-align: justify;
+
+.div__presentacion {
+    grid-area: div__presentacion;
+    text-align: justify;
+    margin: 1rem 0;
+    &--p {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    &--ul {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    &--li {
         margin: 1rem 0;
-        &--p{
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-        }
-        &--ul{
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-        &--li{
-            margin: 1rem 0;
-            &::before{
-                content: " ";
-                display: inline-block;
-                width: 1.5rem;
-                height: 1.5rem;
-                background-image: url(../multimedia/icono_estrella.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                filter: invert(0.9); /* invierte colores del icono, valores de 0 - 1 */
-                margin-right: 0.3rem;
-            } /* Icono de las viñetas de lista en Index */
+        &::before {
+            content: " ";
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-image: url(../multimedia/icono_estrella.png); /* Icono de las viñetas de lista en Index */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: invert(0.9); /* invierte colores del icono, valores de 0 - 1 */
+            margin-right: 0.3rem;
         }
     }
-    &__img--inicio{
-        width: 70%;
-        max-width: 600px;
-        grid-area: main__img--inicio;
-        margin: 1rem;
-        background-image: url(../multimedia/accesorios_baile_background.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        img{
-            animation-name: imgInicio;
-            animation-duration: 25s;
-            animation-delay: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        } /* Index img animada */
-    }
-    @keyframes imgInicio{
-        0% {filter: opacity(1);}
-        5% {filter: opacity(1);}
-        10% {filter: opacity(1);}
-        15% {filter: opacity(1);}
-        20% {filter: opacity(0.75);}
-        25% {filter: opacity(0.5);}
-        30% {filter: opacity(0.25);}
-        35% {filter: opacity(0);}
-        40% {filter: opacity(0);}
-        45% {filter: opacity(0);}
-        50% {filter: opacity(0);}
-        55% {filter: opacity(0);}
-        60% {filter: opacity(0);}
-        65% {filter: opacity(0);}
-        70% {filter: opacity(0.25);}
-        75% {filter: opacity(0.50);}
-        80% {filter: opacity(0.75);}
-        85% {filter: opacity(1);}
-        90% {filter: opacity(1);}
-        95% {filter: opacity(1);}
-        100% {filter: opacity(1);}    
-    } /* Animacion index */
 }
+
+.main__img--inicio {
+    width: 70%;
+    max-width: 600px;
+    grid-area: main__img--inicio;
+    margin: 1rem;
+    background-image: url(../multimedia/accesorios_baile_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    img {
+        animation-name: imgInicio;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    } /* Index img animada */
+    @keyframes imgInicio {
+        0% {
+            filter: opacity(1);
+        }
+        5% {
+            filter: opacity(1);
+        }
+        10% {
+            filter: opacity(1);
+        }
+        15% {
+            filter: opacity(1);
+        }
+        20% {
+            filter: opacity(0.75);
+        }
+        25% {
+            filter: opacity(0.5);
+        }
+        30% {
+            filter: opacity(0.25);
+        }
+        35% {
+            filter: opacity(0);
+        }
+        40% {
+            filter: opacity(0);
+        }
+        45% {
+            filter: opacity(0);
+        }
+        50% {
+            filter: opacity(0);
+        }
+        55% {
+            filter: opacity(0);
+        }
+        60% {
+            filter: opacity(0);
+        }
+        65% {
+            filter: opacity(0);
+        }
+        70% {
+            filter: opacity(0.25);
+        }
+        75% {
+            filter: opacity(0.50);
+        }
+        80% {
+            filter: opacity(0.75);
+        }
+        85% {
+            filter: opacity(1);
+        }
+        90% {
+            filter: opacity(1);
+        }
+        95% {
+            filter: opacity(1);
+        }
+        100% {
+            filter: opacity(1);
+        }
+    }
+}
+
+
+/* Animacion index */

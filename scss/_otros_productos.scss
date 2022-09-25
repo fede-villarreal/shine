@@ -16,52 +16,51 @@
 
 /* MAIN - OTROS PORDUCTOS Y SERVICIOS */
 
-.main{
-    .divDecoracionCristales{
-        grid-area: divDecoracionCristales;
-        &__h3{
-            font-size: calc(1.2rem + 1.5vw);
-            text-shadow: 1px 1px 5px rgb(255, 225, 52);
-        }
-        &__img{
-            margin: 1.5rem;
-            padding: 0;
-            width: auto;
-            height: 50vw;
-            max-height: 300px;
-        }
+
+.divDecoracionCristales{
+    grid-area: divDecoracionCristales;
+    &__h3{
+        font-size: calc(1.2rem + 1.5vw);
+        text-shadow: 1px 1px 5px rgb(255, 225, 52);
     }
-    .divPack{
-        grid-area: divPack;
-        text-align: center;
-        width: 80vw;
-        max-width: 450px;
-        &__img{
-            margin: 0 2rem;
-            width: 50vw;
-            max-width: 350px;
-            height: auto;
-        }
-        ul{
-            margin: 1rem 0 0 0;
-            padding: 0;
-        } /* Contenedor del producto pack */
-    } 
-    .div__pgs--grupal{
-        grid-area: pgs__gridArea;
-        .pgs__individual{
-            width: auto;
-            text-align: center;
-            &--img{
-                height: 40vw;
-                max-height: 250px;
-                width: auto;
-            }
-            figcaption{
-                width: 50vw;
-                max-width: 300px;
-                margin-top: 1rem;
-            }
-        } /* Contenedor individual pestañas, glitter y strass */
-    } /* Contenedor grupal pestañas, glitter y strass */
+    &__img{
+        margin: 1.5rem;
+        padding: 0;
+        width: auto;
+        height: 50vw;
+        max-height: 300px;
+    }
 }
+.divPack{
+    grid-area: divPack;
+    text-align: center;
+    width: 80vw;
+    max-width: 450px;
+    &__img{
+        margin: 0 2rem;
+        width: 50vw;
+        max-width: 350px;
+        height: auto;
+    }
+    ul{
+        margin: 1rem 0 0 0;
+        padding: 0;
+    } /* Contenedor del producto pack */
+} 
+.div__pgs--grupal{
+    grid-area: pgs__gridArea;
+    .pgs__individual{
+        width: auto;
+        text-align: center;
+        &--img{
+            height: 40vw;
+            max-height: 250px;
+            width: auto;
+        }
+        figcaption{
+            width: 50vw;
+            max-width: 300px;
+            margin-top: 1rem;
+        }
+    } /* Contenedor individual pestañas, glitter y strass */
+} /* Contenedor grupal pestañas, glitter y strass */

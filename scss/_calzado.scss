@@ -15,22 +15,20 @@
 
 /* MAIN - CALZADO */
 
-.main{
-    &__div--chicago{
-        grid-area: main__div--chicago;
-        max-width: 500px;
-    } /* Sandalias chicago (negras) */
-    &__div--puertoRico{
-        grid-area: main__div--puertoRico;
-        max-width: 500px;
-    } /* Sandalias puerto rico (camel) */
-    /* Proyecto futuro .main__div--caribean{                
-        grid-area: main__div--caribean;
-        max-width: 500px;
-    } */ /* Proyecto futuro */
-    &__img--calzado{
-        width: 60vw;
-        max-width: 300px;
-        margin-bottom: 3rem;
-    }
+.main__div--chicago{
+    grid-area: main__div--chicago;
+    max-width: 500px;
+} /* Sandalias chicago (negras) */
+.main__div--puertoRico{
+    grid-area: main__div--puertoRico;
+    max-width: 500px;
+} /* Sandalias puerto rico (camel) */
+/* Proyecto futuro .main__div--caribean{                
+    grid-area: main__div--caribean;
+    max-width: 500px;
+} */ /* Proyecto futuro */
+.main__img--calzado{
+    width: 60vw;
+    max-width: 300px;
+    margin-bottom: 3rem;
 }

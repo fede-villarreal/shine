@@ -44,7 +44,12 @@ body {
   font-size: calc(0.8rem + 1vw);
   min-height: 100vh; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-style: italic; }
@@ -78,34 +83,37 @@ h1, h2, h3, h4, h5, h6 {
       transition: 0.5s; }
 
 /* MAIN GENERAL */
-.main {
-  /* Fondo de color para divs dentro del main */ }
-  .main__div--color {
-    background: linear-gradient(135deg, #710085, #21002e);
-    width: 90%;
-    text-align: center;
-    padding: 1rem;
-    margin: 1.5rem; }
-  .main__div--flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-    align-content: space-around; }
-  .main__h1 {
-    background-color: #660073;
-    font-size: calc(1.5rem + 1.5vw);
-    grid-area: main__h1;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    justify-self: stretch; }
-  .main__h2 {
-    text-align: center;
-    font-size: calc(1.5rem + 1.5vw);
-    margin: 1rem; }
+.main__div--color {
+  background: linear-gradient(135deg, #710085, #21002e);
+  width: 90%;
+  text-align: center;
+  padding: 1rem;
+  margin: 1.5rem; }
+
+/* Fondo de color para divs dentro del main */
+.main__div--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  align-content: space-around; }
+
+.main__h1 {
+  background-color: #660073;
+  font-size: calc(1.5rem + 1.5vw);
+  grid-area: main__h1;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  justify-self: stretch; }
+
+.main__h2 {
+  text-align: center;
+  font-size: calc(1.5rem + 1.5vw);
+  margin: 1rem; }
 
 /* SECTION / ARTICLE */
-section, article {
+section,
+article {
   text-align: center;
   width: fit-content;
   font-style: italic;
@@ -155,49 +163,47 @@ footer {
 
 /* Layout del main del index */
 /* MAIN - INDEX */
-.main {
-  /* Animacion index */ }
-  .main .div__presentacion {
-    grid-area: div__presentacion;
-    text-align: justify;
+.div__presentacion {
+  grid-area: div__presentacion;
+  text-align: justify;
+  margin: 1rem 0; }
+  .div__presentacion--p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; }
+  .div__presentacion--ul {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+  .div__presentacion--li {
     margin: 1rem 0; }
-    .main .div__presentacion--p {
-      margin-left: 1.5rem;
-      margin-right: 1.5rem; }
-    .main .div__presentacion--ul {
-      margin-left: 2rem;
-      margin-right: 2rem; }
-    .main .div__presentacion--li {
-      margin: 1rem 0;
-      /* Icono de las viñetas de lista en Index */ }
-      .main .div__presentacion--li::before {
-        content: " ";
-        display: inline-block;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-image: url(../multimedia/icono_estrella.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        filter: invert(0.9);
-        /* invierte colores del icono, valores de 0 - 1 */
-        margin-right: 0.3rem; }
-  .main__img--inicio {
-    width: 70%;
-    max-width: 600px;
-    grid-area: main__img--inicio;
-    margin: 1rem;
-    background-image: url(../multimedia/accesorios_baile_background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* Index img animada */ }
-    .main__img--inicio img {
-      animation-name: imgInicio;
-      animation-duration: 25s;
-      animation-delay: 3s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
+    .div__presentacion--li::before {
+      content: " ";
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-image: url(../multimedia/icono_estrella.png);
+      /* Icono de las viñetas de lista en Index */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      filter: invert(0.9);
+      /* invierte colores del icono, valores de 0 - 1 */
+      margin-right: 0.3rem; }
+
+.main__img--inicio {
+  width: 70%;
+  max-width: 600px;
+  grid-area: main__img--inicio;
+  margin: 1rem;
+  background-image: url(../multimedia/accesorios_baile_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Index img animada */ }
+  .main__img--inicio img {
+    animation-name: imgInicio;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
 
 @keyframes imgInicio {
   0% {
@@ -243,6 +249,7 @@ footer {
   100% {
     filter: opacity(1); } }
 
+/* Animacion index */
 /* LAYOUT CALZADO */
 .calzado__main--layout {
   display: grid;
@@ -254,24 +261,25 @@ footer {
 
 /* Layout del main de calzado */
 /* MAIN - CALZADO */
-.main {
-  /* Sandalias chicago (negras) */
-  /* Sandalias puerto rico (camel) */
-  /* Proyecto futuro .main__div--caribean{                
-        grid-area: main__div--caribean;
-        max-width: 500px;
-    } */
-  /* Proyecto futuro */ }
-  .main__div--chicago {
-    grid-area: main__div--chicago;
-    max-width: 500px; }
-  .main__div--puertoRico {
-    grid-area: main__div--puertoRico;
-    max-width: 500px; }
-  .main__img--calzado {
-    width: 60vw;
-    max-width: 300px;
-    margin-bottom: 3rem; }
+.main__div--chicago {
+  grid-area: main__div--chicago;
+  max-width: 500px; }
+
+/* Sandalias chicago (negras) */
+.main__div--puertoRico {
+  grid-area: main__div--puertoRico;
+  max-width: 500px; }
+
+/* Sandalias puerto rico (camel) */
+/* Proyecto futuro .main__div--caribean{                
+    grid-area: main__div--caribean;
+    max-width: 500px;
+} */
+/* Proyecto futuro */
+.main__img--calzado {
+  width: 60vw;
+  max-width: 300px;
+  margin-bottom: 3rem; }
 
 /* LAYOUT AROS Y APLIQUES */
 .aros__main--layout {
@@ -290,18 +298,18 @@ footer {
 .main__div--apliques {
   grid-area: main__div--apliques; }
 
-.main .div__arosApliques {
+.div__arosApliques {
+  text-align: center;
   /* contenedor color figure - figcaption (card) */
   /* Tamaño de img y tamaño maximo la imagen escala sin ser cortada para que pueda ajustarse */ }
-  .main .div__arosApliques--background {
-    text-align: center;
+  .div__arosApliques--background {
     background-color: rgba(0, 0, 0, 0.7);
     padding: calc(1rem + 1vw);
     padding-bottom: 0.8rem;
     margin: 1rem 0.5rem;
     text-shadow: 1px 1px 5px #ffe134;
     border-radius: 5px; }
-  .main .div__arosApliques--img {
+  .div__arosApliques--img {
     margin-bottom: 1rem;
     padding: 0;
     width: 50vw;
@@ -321,48 +329,49 @@ footer {
 
 /* Layout del main de otros productos y servicios */
 /* MAIN - OTROS PORDUCTOS Y SERVICIOS */
-.main {
-  /* Contenedor grupal pestañas, glitter y strass */ }
-  .main .divDecoracionCristales {
-    grid-area: divDecoracionCristales; }
-    .main .divDecoracionCristales__h3 {
-      font-size: calc(1.2rem + 1.5vw);
-      text-shadow: 1px 1px 5px #ffe134; }
-    .main .divDecoracionCristales__img {
-      margin: 1.5rem;
-      padding: 0;
-      width: auto;
-      height: 50vw;
-      max-height: 300px; }
-  .main .divPack {
-    grid-area: divPack;
-    text-align: center;
-    width: 80vw;
-    max-width: 450px;
-    /* Contenedor del producto pack */ }
-    .main .divPack__img {
-      margin: 0 2rem;
-      width: 50vw;
-      max-width: 350px;
-      height: auto; }
-    .main .divPack ul {
-      margin: 1rem 0 0 0;
-      padding: 0; }
-  .main .div__pgs--grupal {
-    grid-area: pgs__gridArea;
-    /* Contenedor individual pestañas, glitter y strass */ }
-    .main .div__pgs--grupal .pgs__individual {
-      width: auto;
-      text-align: center; }
-      .main .div__pgs--grupal .pgs__individual--img {
-        height: 40vw;
-        max-height: 250px;
-        width: auto; }
-      .main .div__pgs--grupal .pgs__individual figcaption {
-        width: 50vw;
-        max-width: 300px;
-        margin-top: 1rem; }
+.divDecoracionCristales {
+  grid-area: divDecoracionCristales; }
+  .divDecoracionCristales__h3 {
+    font-size: calc(1.2rem + 1.5vw);
+    text-shadow: 1px 1px 5px #ffe134; }
+  .divDecoracionCristales__img {
+    margin: 1.5rem;
+    padding: 0;
+    width: auto;
+    height: 50vw;
+    max-height: 300px; }
 
+.divPack {
+  grid-area: divPack;
+  text-align: center;
+  width: 80vw;
+  max-width: 450px;
+  /* Contenedor del producto pack */ }
+  .divPack__img {
+    margin: 0 2rem;
+    width: 50vw;
+    max-width: 350px;
+    height: auto; }
+  .divPack ul {
+    margin: 1rem 0 0 0;
+    padding: 0; }
+
+.div__pgs--grupal {
+  grid-area: pgs__gridArea;
+  /* Contenedor individual pestañas, glitter y strass */ }
+  .div__pgs--grupal .pgs__individual {
+    width: auto;
+    text-align: center; }
+    .div__pgs--grupal .pgs__individual--img {
+      height: 40vw;
+      max-height: 250px;
+      width: auto; }
+    .div__pgs--grupal .pgs__individual figcaption {
+      width: 50vw;
+      max-width: 300px;
+      margin-top: 1rem; }
+
+/* Contenedor grupal pestañas, glitter y strass */
 /* LAYOUT CONTACTO */
 .contacto__main--layout {
   display: grid;
@@ -374,12 +383,12 @@ footer {
 
 /* Layout del main de cntacto */
 /* MAIN - CONTACTO */
-main__p--form {
+.main__p--form {
   font-size: calc(1rem + 1vw);
   grid-area: main__p--form;
   margin: 2rem; }
 
-main .form {
+.form {
   background: linear-gradient(135deg, #710085, #21002e);
   padding: 5%;
   width: 90vw;
@@ -388,24 +397,24 @@ main .form {
   font-size: calc(1rem + 0.5vw);
   grid-area: form;
   margin-bottom: 2rem; }
-  main .form__input--text {
+  .form__input--text {
     display: block;
     width: 100%;
     margin-bottom: 1.5rem;
     color: black;
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
-  main .form__divBotones {
+  .form__divBotones {
     text-align: right; }
-    main .form__divBotones--button {
+    .form__divBotones--button {
       background-color: #660073;
       margin-left: 5px;
       padding: 10px; }
-      main .form__divBotones--button:hover {
+      .form__divBotones--button:hover {
         background: linear-gradient(#89009b, #5b0067); }
-    main .form__divBotones--reset {
+    .form__divBotones--reset {
       border-radius: 100px 20px 100px 150px; }
-    main .form__divBotones--submit {
+    .form__divBotones--submit {
       border-radius: 20px 100px 150px; }
 
 /* MEDIA QUERIES */

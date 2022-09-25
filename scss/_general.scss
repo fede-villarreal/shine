@@ -1,6 +1,6 @@
 /* ESTRUCTURA BASICA GENERAL */
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: linear-gradient(135deg, hsl(283, 100%, 9%), hsl(291, 100%, 26%));
@@ -8,40 +8,56 @@ body{
     font-size: calc(0.8rem + 1vw);
     min-height: 100vh;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-style: italic;
 }
-::selection{
+
+::selection {
     background-color: rgb(102, 0, 115);
-} /* Modifica el color por defecto al seleccionar el texto */
+}
+
+/* Modifica el color por defecto al seleccionar el texto */
 
 
 /* LAYOUT GENERAL*/
 
-.all__body--flex{
+.all__body--flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} /* Flex para acomodar los hijos del body */
+}
+
+/* Flex para acomodar los hijos del body */
 
 
 /* HEADER */
 
-.header{
+.header {
     background-color: rgb(39, 0, 75);
-    &__logo{
+
+    &__logo {
         width: 30%;
         max-width: 150px;
         border-radius: 100px 20px;
-    } /* Logo de Shine */
-    &__titulo--menu{
+    }
+
+    /* Logo de Shine */
+    &__titulo--menu {
         font-size: calc(2rem + 1vw);
     }
-    &__li{
+
+    &__li {
         font-size: calc(1.5rem + 1vw);
-        &:hover{
+
+        &:hover {
             background-color: rgb(102, 0, 115);
             padding: 0 0.5rem;
             transition: 0.5s;
@@ -52,59 +68,64 @@ h1, h2, h3, h4, h5, h6{
 
 /* MAIN GENERAL */
 
-.main{
-    &__div--color{
-        background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
-        width: 90%;
-        text-align: center;
-        padding: 1rem;
-        margin: 1.5rem;
-    } /* Fondo de color para divs dentro del main */
-    &__div--flex{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: space-evenly;
-        align-content: space-around;
-    }
-    &__h1{
-        background-color: rgb(102, 0, 115);
-        font-size: calc(1.5rem + 1.5vw);
-        grid-area: main__h1;
-        margin-top: 2rem;
-        padding: 1rem 2rem;
-        justify-self: stretch;
-    }
-    &__h2{
-        text-align: center;
-        font-size: calc(1.5rem + 1.5vw);
-        margin: 1rem;
-    }
+.main__div--color {
+    background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+} /* Fondo de color para divs dentro del main */
+
+.main__div--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    align-content: space-around;
 }
+
+.main__h1 {
+    background-color: rgb(102, 0, 115);
+    font-size: calc(1.5rem + 1.5vw);
+    grid-area: main__h1;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    justify-self: stretch;
+}
+
+.main__h2 {
+    text-align: center;
+    font-size: calc(1.5rem + 1.5vw);
+    margin: 1rem;
+}
+
 
 
 /* SECTION / ARTICLE */
 
-section, article{
+section,
+article {
     text-align: center;
     width: fit-content;
     font-style: italic;
     font-weight: bold;
     margin: 1rem auto 2rem auto;
 }
-section{
+
+section {
     font-family: 'Indie Flower', cursive;
     font-size: calc(1.5rem + 1vw);
     text-shadow: 2px 2px 5px gold;
     grid-area: section;
 }
-article{
+
+article {
     border: 0.5rem dashed rgb(39, 0, 75);
     background-color: rgb(102, 0, 115);
     padding: 0.5rem;
     font-size: calc(1rem + 1vw);
     grid-area: article;
-    span{
+    span {
         text-decoration: underline;
     }
 }
@@ -112,21 +133,24 @@ article{
 
 /* FOOTER */
 
-footer{
+footer {
     padding: 1.2rem;
     background-color: rgb(39, 0, 75);
     text-align: center;
     overflow: hidden;
-    span{
+
+    span {
         font-weight: bold;
         font-style: italic;
     }
-    p:hover{
-        transform: scale( 1.1, 1.1);
+
+    p:hover {
+        transform: scale(1.1, 1.1);
         text-shadow: 3px 3px 3px black;
         transition: 0.5s;
     }
-    .logoInstagram{
+
+    .logoInstagram {
         width: 1rem;
         margin: 0 0.2rem 0 0.4rem;
     }
