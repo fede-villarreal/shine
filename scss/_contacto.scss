@@ -21,7 +21,7 @@
     margin: 2rem;
 }
 .form{
-    background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
+    background: linear-gradient(135deg, $colorGradiente2, $colorGradiente1);
     padding: 5%;
     width: 90vw;
     max-width: 600px;
@@ -40,7 +40,7 @@
     &__divBotones{
         text-align: right;
         &--button{
-            background-color: rgb(102, 0, 115);
+            background-color: $colorSecundario;
             margin-left: 5px;
             padding: 10px;
             &:hover{

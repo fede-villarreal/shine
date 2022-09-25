@@ -3,7 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    background: linear-gradient(135deg, hsl(283, 100%, 9%), hsl(291, 100%, 26%));
+    background: linear-gradient(135deg, $colorGradiente1, $colorGradiente2);
     color: whitesmoke;
     font-size: calc(0.8rem + 1vw);
     min-height: 100vh;
@@ -21,7 +21,7 @@ h6 {
 }
 
 ::selection {
-    background-color: rgb(102, 0, 115);
+    background-color: $colorSecundario;
 }
 
 /* Modifica el color por defecto al seleccionar el texto */
@@ -41,7 +41,7 @@ h6 {
 /* HEADER */
 
 .header {
-    background-color: rgb(39, 0, 75);
+    background-color: $colorPrincipal;
 
     &__logo {
         width: 30%;
@@ -58,7 +58,7 @@ h6 {
         font-size: calc(1.5rem + 1vw);
 
         &:hover {
-            background-color: rgb(102, 0, 115);
+            background-color: $colorSecundario;
             padding: 0 0.5rem;
             transition: 0.5s;
         }
@@ -69,7 +69,7 @@ h6 {
 /* MAIN GENERAL */
 
 .main__div--color {
-    background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
+    background: linear-gradient(135deg, $colorGradiente2, $colorGradiente1);
     width: 90%;
     text-align: center;
     padding: 1rem;
@@ -85,7 +85,7 @@ h6 {
 }
 
 .main__h1 {
-    background-color: rgb(102, 0, 115);
+    background-color: $colorSecundario;
     font-size: calc(1.5rem + 1.5vw);
     grid-area: main__h1;
     margin-top: 2rem;
@@ -120,8 +120,8 @@ section {
 }
 
 article {
-    border: 0.5rem dashed rgb(39, 0, 75);
-    background-color: rgb(102, 0, 115);
+    border: 0.5rem dashed $colorPrincipal;
+    background-color: $colorSecundario;
     padding: 0.5rem;
     font-size: calc(1rem + 1vw);
     grid-area: article;
@@ -135,7 +135,7 @@ article {
 
 footer {
     padding: 1.2rem;
-    background-color: rgb(39, 0, 75);
+    background-color: $colorPrincipal;
     text-align: center;
     overflow: hidden;
 
