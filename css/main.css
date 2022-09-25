@@ -202,6 +202,7 @@ footer {
   .main__img--inicio img {
     animation-name: imgInicio;
     animation-duration: 25s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; }
 
