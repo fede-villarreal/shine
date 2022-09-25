@@ -1,0 +1,45 @@
+/* LAYOUT AROS Y APLIQUES */
+
+.aros__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 3, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__div--aros"
+        "main__div--apliques";
+    justify-items: center;
+    align-items:  center;
+} /* Layout del main de aros y apliques */
+
+
+/* MAIN - AROS Y APLIQUES */
+
+.main{
+    &__div--aros{
+        grid-area: main__div--aros;
+    }
+    &__div--apliques{
+        grid-area: main__div--apliques;
+    }
+    .div__arosApliques{
+        &--background{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: calc(1rem + 1vw);
+            padding-bottom: 0.8rem;
+            margin: 1rem 0.5rem;
+            text-shadow: 1px 1px 5px rgb(255, 225, 52);
+            border-radius: 5px;
+        } /* contenedor color figure - figcaption (card) */
+        &--img{
+            margin-bottom: 1rem;
+            padding: 0;
+            width: 50vw;
+            max-width: 250px;
+            height: 50vw;
+            max-height: 250px;
+            object-fit: contain;
+        } /* Tamaño de img y tamaño maximo la imagen escala sin ser cortada para que pueda ajustarse */
+    }
+}

@@ -1,0 +1,58 @@
+/* LAYOUT CONTACTO */
+
+.contacto__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 3, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__p--form"
+        "form";
+    justify-items: center;
+    align-items:  center;
+} /* Layout del main de cntacto */
+
+
+/* MAIN - CONTACTO */
+main{
+    &__p--form{
+        font-size: calc(1rem + 1vw);
+        grid-area: main__p--form;
+        margin: 2rem;
+    }
+    .form{
+        background: linear-gradient(135deg, hsl(291, 100%, 26%), hsl(283, 100%, 9%));
+        padding: 5%;
+        width: 90vw;
+        max-width: 600px;
+        text-align: left;
+        font-size: calc(1rem + 0.5vw);
+        grid-area: form;
+        margin-bottom: 2rem;
+        &__input--text{
+            display: block;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            color: black;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        &__divBotones{
+            text-align: right;
+            &--button{
+                background-color: rgb(102, 0, 115);
+                margin-left: 5px;
+                padding: 10px;
+                &:hover{
+                    background: linear-gradient(rgb(137, 0, 155), rgb(91, 0, 103));
+                }
+            }
+            &--reset{
+                border-radius: 100px 20px 100px 150px;
+            }
+            &--submit{
+                border-radius: 20px 100px 150px;
+            }
+        }
+    }
+}

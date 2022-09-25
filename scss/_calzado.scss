@@ -1,0 +1,36 @@
+/* LAYOUT CALZADO */
+
+.calzado__main--layout{
+    display: grid;
+    grid-template-rows: repeat( 3, auto);
+    grid-row-gap: 1rem;
+    grid-template-areas:    
+        "main__h1"
+        "main__div--chicago"
+        "main__div--puertoRico";
+    justify-items: center;
+    align-items: center;
+} /* Layout del main de calzado */
+
+
+/* MAIN - CALZADO */
+
+.main{
+    &__div--chicago{
+        grid-area: main__div--chicago;
+        max-width: 500px;
+    } /* Sandalias chicago (negras) */
+    &__div--puertoRico{
+        grid-area: main__div--puertoRico;
+        max-width: 500px;
+    } /* Sandalias puerto rico (camel) */
+    /* Proyecto futuro .main__div--caribean{                
+        grid-area: main__div--caribean;
+        max-width: 500px;
+    } */ /* Proyecto futuro */
+    &__img--calzado{
+        width: 60vw;
+        max-width: 300px;
+        margin-bottom: 3rem;
+    }
+}
