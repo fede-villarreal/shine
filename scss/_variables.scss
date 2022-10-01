@@ -18,3 +18,22 @@ $botones:(
         border-radius: $borderRadius;
     }
 }
+
+
+/* MAP GET */
+
+$fuentes:(
+    general: 'Roboto',
+    titulo: 'Open Sans',
+    cursiva: 'Indie Flower'
+);
+
+
+/* MIXIN */
+
+@mixin flexBase($fd, $fw, $jc) {
+    display: flex;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    justify-content: $jc;
+}

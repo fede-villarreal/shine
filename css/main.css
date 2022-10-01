@@ -7,6 +7,8 @@
 .form__divBotones--submit {
   border-radius: 20px 100px 150px; }
 
+/* MAP GET */
+/* MIXIN */
 /* RESETEO CSS */
 :root {
   --bs-link-color: inherit;
@@ -45,7 +47,7 @@ form, input, textarea, select, button, label {
 
 /* ESTRUCTURA BASICA GENERAL */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   background: linear-gradient(135deg, #21002e, #710085);
   color: whitesmoke;
@@ -58,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: italic; }
 
@@ -70,6 +72,7 @@ h6 {
 .all__body--flex {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-between; }
 
 /* Flex para acomodar los hijos del body */
@@ -91,7 +94,7 @@ h6 {
       transition: 0.5s; }
 
 /* MAIN GENERAL */
-.main__div--color {
+.main__div--color, .main__div--chicago, .main__div--puertoRico {
   background: linear-gradient(135deg, #710085, #21002e);
   width: 90%;
   text-align: center;
@@ -101,6 +104,7 @@ h6 {
 /* Fondo de color para divs dentro del main */
 .main__div--flex {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: space-evenly;
@@ -129,7 +133,7 @@ article {
   margin: 1rem auto 2rem auto; }
 
 section {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursiva;
   font-size: calc(1.5rem + 1vw);
   text-shadow: 2px 2px 5px gold;
   grid-area: section; }
@@ -280,7 +284,8 @@ footer {
   max-width: 500px; }
 
 /* Sandalias puerto rico (camel) */
-/* Proyecto futuro .main__div--caribean{                
+/* Proyecto futuro .main__div--caribean{
+    @extend .main__div--color;                
     grid-area: main__div--caribean;
     max-width: 500px;
 } */

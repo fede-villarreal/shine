@@ -1,7 +1,7 @@
 /* ESTRUCTURA BASICA GENERAL */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: map-get($fuentes, general), sans-serif;
     font-weight: 500;
     background: linear-gradient(135deg, $colorGradiente1, $colorGradiente2);
     color: whitesmoke;
@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: map-get($fuentes, titulo), sans-serif;
     font-weight: 700;
     font-style: italic;
 }
@@ -30,9 +30,7 @@ h6 {
 /* LAYOUT GENERAL*/
 
 .all__body--flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flexBase(column, nowrap, space-between);
 }
 
 /* Flex para acomodar los hijos del body */
@@ -77,9 +75,7 @@ h6 {
 } /* Fondo de color para divs dentro del main */
 
 .main__div--flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flexBase(row, wrap, space-evenly);
     align-items: space-evenly;
     align-content: space-around;
 }
@@ -113,7 +109,7 @@ article {
 }
 
 section {
-    font-family: 'Indie Flower', cursive;
+    font-family: map-get($fuentes, cursiva), cursiva;
     font-size: calc(1.5rem + 1vw);
     text-shadow: 2px 2px 5px gold;
     grid-area: section;

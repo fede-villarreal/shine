@@ -16,14 +16,17 @@
 /* MAIN - CALZADO */
 
 .main__div--chicago{
+    @extend .main__div--color;
     grid-area: main__div--chicago;
     max-width: 500px;
 } /* Sandalias chicago (negras) */
 .main__div--puertoRico{
+    @extend .main__div--color;
     grid-area: main__div--puertoRico;
     max-width: 500px;
 } /* Sandalias puerto rico (camel) */
-/* Proyecto futuro .main__div--caribean{                
+/* Proyecto futuro .main__div--caribean{
+    @extend .main__div--color;                
     grid-area: main__div--caribean;
     max-width: 500px;
 } */ /* Proyecto futuro */
