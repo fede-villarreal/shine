@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/* VARIABLES */
+/* MAP */
+.form__divBotones--reset {
+  border-radius: 100px 20px 100px 150px; }
+
+.form__divBotones--submit {
+  border-radius: 20px 100px 150px; }
+
 /* RESETEO CSS */
 :root {
   --bs-link-color: inherit;
@@ -413,10 +421,6 @@ footer {
       padding: 10px; }
       .form__divBotones--button:hover {
         background: linear-gradient(#89009b, #5b0067); }
-    .form__divBotones--reset {
-      border-radius: 100px 20px 100px 150px; }
-    .form__divBotones--submit {
-      border-radius: 20px 100px 150px; }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 481px) and (orientation: landscape) {

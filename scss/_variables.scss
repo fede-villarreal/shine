@@ -1,4 +1,20 @@
+/* VARIABLES */
+
 $colorPrincipal: rgb(39, 0, 75);
 $colorSecundario: rgb(102, 0, 115);
 $colorGradiente1: hsl(283, 100%, 9%);
 $colorGradiente2: hsl(291, 100%, 26%);
+
+
+/* MAP */
+
+$botones:(
+    reset: 100px 20px 100px 150px,
+    submit: 20px 100px 150px
+);
+
+@each $boton , $borderRadius in $botones{
+    .form__divBotones--#{$boton}{
+        border-radius: $borderRadius;
+    }
+}
