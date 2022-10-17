@@ -48,7 +48,7 @@ form, input, textarea, select, button, label {
 /* ESTRUCTURA BASICA GENERAL */
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   background: linear-gradient(135deg, #21002e, #710085);
   color: whitesmoke;
   font-size: calc(0.8rem + 1vw);
@@ -79,11 +79,13 @@ h6 {
 /* HEADER */
 .header {
   background-color: #27004b;
+  font-weight: 500;
   /* Logo de Shine */ }
   .header__logo {
     width: 30%;
-    max-width: 150px;
-    border-radius: 100px 20px; }
+    max-width: 150px; }
+    .header__logo--borde {
+      border-radius: 100px 20px; }
   .header__titulo--menu {
     font-size: calc(2rem + 1vw); }
   .header__li {
@@ -123,20 +125,27 @@ h6 {
   font-size: calc(1.5rem + 1.5vw);
   margin: 1rem; }
 
+.palabraDestacada {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px black;
+  font-style: italic; }
+
 /* SECTION / ARTICLE */
 section,
 article {
   text-align: center;
+  align-self: center;
   width: fit-content;
   font-style: italic;
-  font-weight: bold;
-  margin: 1rem auto 2rem auto; }
+  margin: 1rem 1rem 2rem; }
 
 section {
   font-family: "Indie Flower", cursiva;
   font-size: calc(1.5rem + 1vw);
   text-shadow: 2px 2px 5px gold;
-  grid-area: section; }
+  grid-area: section;
+  font-weight: bold; }
 
 article {
   border: 0.5rem dashed #27004b;
@@ -178,7 +187,8 @@ footer {
 .div__presentacion {
   grid-area: div__presentacion;
   text-align: justify;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  font-weight: 300; }
   .div__presentacion--p {
     margin-left: 1.5rem;
     margin-right: 1.5rem; }
@@ -200,6 +210,8 @@ footer {
       filter: invert(0.9);
       /* invierte colores del icono, valores de 0 - 1 */
       margin-right: 0.3rem; }
+  .div__presentacion span {
+    font-style: italic; }
 
 .main__img--inicio {
   width: 70%;
@@ -292,7 +304,7 @@ footer {
 /* Proyecto futuro */
 .main__img--calzado {
   width: 60vw;
-  max-width: 300px;
+  max-width: 350px;
   margin-bottom: 3rem; }
 
 /* LAYOUT AROS Y APLIQUES */
@@ -344,7 +356,8 @@ footer {
 /* Layout del main de otros productos y servicios */
 /* MAIN - OTROS PORDUCTOS Y SERVICIOS */
 .divDecoracionCristales {
-  grid-area: divDecoracionCristales; }
+  grid-area: divDecoracionCristales;
+  width: 80vw; }
   .divDecoracionCristales__h3 {
     font-size: calc(1.2rem + 1.5vw);
     text-shadow: 1px 1px 5px #ffe134; }
@@ -359,7 +372,7 @@ footer {
   grid-area: divPack;
   text-align: center;
   width: 80vw;
-  max-width: 450px;
+  max-width: 500px;
   /* Contenedor del producto pack */ }
   .divPack__img {
     margin: 0 2rem;
@@ -374,16 +387,20 @@ footer {
   grid-area: pgs__gridArea;
   /* Contenedor individual pestañas, glitter y strass */ }
   .div__pgs--grupal .pgs__individual {
-    width: auto;
+    width: 80vw;
+    max-width: 450px;
     text-align: center; }
     .div__pgs--grupal .pgs__individual--img {
-      height: 40vw;
-      max-height: 250px;
-      width: auto; }
+      height: 60vw;
+      max-height: 350px;
+      width: auto;
+      max-width: 90%;
+      object-fit: cover; }
     .div__pgs--grupal .pgs__individual figcaption {
       width: 50vw;
       max-width: 300px;
-      margin-top: 1rem; }
+      margin: 1rem auto 0;
+      font-weight: 300; }
 
 /* Contenedor grupal pestañas, glitter y strass */
 /* LAYOUT CONTACTO */
@@ -418,6 +435,8 @@ footer {
     color: black;
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
+  .form fieldset {
+    margin-bottom: 1.5rem; }
   .form__divBotones {
     text-align: right; }
     .form__divBotones--button {
@@ -439,7 +458,9 @@ footer {
   .header__li {
     font-size: calc(0.8rem + 1vw); }
     .header__li:hover {
-      padding: 0; } }
+      padding: 0; }
+  .div__pgs--grupal .pgs__individual {
+    max-width: 350px; } }
 
 @media screen and (min-width: 961px) and (orientation: landscape) {
   .header {
@@ -448,6 +469,21 @@ footer {
       margin: 1rem 0 1rem 5rem; }
     .header__li {
       margin: 0.2rem; } }
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .calzado__main--layout {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+    grid-template-areas: "main__h1 main__h1" "main__div--chicago main__div--puertoRico";
+    justify-items: center;
+    align-items: center; }
+  .main__div--chicago {
+    justify-self: end;
+    margin: 3vw; }
+  .main__div--puertoRico {
+    justify-self: start;
+    margin: 3vw; } }
 
 img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
   display: none; }

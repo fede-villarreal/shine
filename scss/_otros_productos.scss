@@ -19,6 +19,7 @@
 
 .divDecoracionCristales{
     grid-area: divDecoracionCristales;
+    width: 80vw;
     &__h3{
         font-size: calc(1.2rem + 1.5vw);
         text-shadow: 1px 1px 5px rgb(255, 225, 52);
@@ -35,7 +36,7 @@
     grid-area: divPack;
     text-align: center;
     width: 80vw;
-    max-width: 450px;
+    max-width: 500px;
     &__img{
         margin: 0 2rem;
         width: 50vw;
@@ -50,17 +51,21 @@
 .div__pgs--grupal{
     grid-area: pgs__gridArea;
     .pgs__individual{
-        width: auto;
+        width: 80vw;
+        max-width: 450px;
         text-align: center;
         &--img{
-            height: 40vw;
-            max-height: 250px;
+            height: 60vw;
+            max-height: 350px;
             width: auto;
+            max-width: 90%;
+            object-fit: cover;
         }
         figcaption{
             width: 50vw;
             max-width: 300px;
-            margin-top: 1rem;
+            margin: 1rem auto 0;
+            font-weight: 300;
         }
     } /* Contenedor individual pestañas, glitter y strass */
 } /* Contenedor grupal pestañas, glitter y strass */

@@ -19,6 +19,11 @@
             padding: 0;
         }
     }
+    .div__pgs--grupal{
+        .pgs__individual{
+            max-width: 350px;
+        }
+    }
 }
 
 @media screen and (min-width: 961px) and (orientation: landscape) {
@@ -30,5 +35,25 @@
         &__li {
             margin: 0.2rem;
         }
+    }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .calzado__main--layout{
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1rem;
+        grid-template-areas:    
+            "main__h1 main__h1"
+            "main__div--chicago main__div--puertoRico";
+        justify-items: center;
+        align-items: center;
+    }
+    .main__div--chicago{
+        justify-self: end;
+        margin: 3vw;
+    }
+    .main__div--puertoRico{
+        justify-self: start;
+        margin: 3vw;
     }
 }
