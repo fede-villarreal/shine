@@ -5,8 +5,6 @@ const textoWhats = document.querySelector(".textoWhats")
 const textoInsta = document.querySelector(".textoInsta")
 const textoFace = document.querySelector(".textoFace")
 
-console.log(containerWhats)
-console.log(textoWhats)
 
 function mostrarWhats() {
     containerWhats.onmouseover = () => {
