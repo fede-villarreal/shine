@@ -4,7 +4,12 @@ const containerFace = document.querySelector(".containerFace")
 const textoWhats = document.querySelector(".textoWhats")
 const textoInsta = document.querySelector(".textoInsta")
 const textoFace = document.querySelector(".textoFace")
-
+const linkWhats = document.querySelector(".linkWhats")
+linkWhats.onclick = () => {
+    setTimeout ( () => {
+        window.open ( "https://wa.me/5493512252356", "_blank" )
+    }, 1000 )
+}
 
 function mostrarWhats() {
     containerWhats.onmouseover = () => {
