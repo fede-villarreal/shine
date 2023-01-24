@@ -170,8 +170,8 @@ footer {
     text-shadow: 3px 3px 3px black;
     transition: 0.5s; }
   footer .logoInstagram {
-    width: 1rem;
-    margin: 0 0.2rem 0 0.4rem; }
+    width: 1.5rem;
+    margin: 0 0.25rem 0.25rem 0.4rem; }
 
 /* LAYOUT INDEX */
 .index__main--layout {
@@ -414,37 +414,48 @@ footer {
 
 /* Layout del main de cntacto */
 /* MAIN - CONTACTO */
-.main__p--form {
-  font-size: calc(1rem + 1vw);
-  grid-area: main__p--form;
-  margin: 2rem; }
+.textoContacto {
+  margin: 0.5rem 1rem; }
 
-.form {
-  background: linear-gradient(135deg, #710085, #21002e);
-  padding: 5%;
-  width: 90vw;
-  max-width: 600px;
-  text-align: left;
-  font-size: calc(1rem + 0.5vw);
-  grid-area: form;
+.contacto__logo {
+  margin: 1rem;
+  width: 2.5em;
+  display: inline;
+  filter: invert(0.9);
+  /* invierte colores del icono, valores de 0 - 1 */ }
+
+.contacto__texto {
+  margin: 0.5rem;
+  padding: 0.5rem 0.25rem 0;
+  display: none; }
+
+/* Subrayado con animacion de redes sociales */
+.fancy__undeline {
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 90%;
+  transition: background-size 0.25s ease-in; }
+  .fancy__undeline--face {
+    background-image: linear-gradient(120deg, #77A1D3, #79CBCA, #E684AE 100%); }
+    .fancy__undeline--face:hover {
+      background-size: 100% 88% !important; }
+  .fancy__undeline--insta {
+    background-image: linear-gradient(120deg, #DA22FF, #9733EE 100%); }
+    .fancy__undeline--insta:hover {
+      background-size: 100% 88% !important; }
+  .fancy__undeline--whats {
+    background-image: linear-gradient(120deg, #16A085, #F4D03F 100%); }
+    .fancy__undeline--whats:hover {
+      background-size: 100% 88% !important; }
+
+.containerFace {
   margin-bottom: 2rem; }
-  .form__input--text {
-    display: block;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    color: black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; }
-  .form fieldset {
-    margin-bottom: 1.5rem; }
-  .form__divBotones {
-    text-align: right; }
-    .form__divBotones--button {
-      background-color: #660073;
-      margin-left: 5px;
-      padding: 10px; }
-      .form__divBotones--button:hover {
-        background: linear-gradient(#89009b, #5b0067); }
+
+.logoWhatsappFooter {
+  width: 1.5em;
+  margin: 0 0.5rem 0.25rem;
+  filter: invert(0.9);
+  /* invierte colores del icono, valores de 0 - 1 */ }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 481px) and (orientation: landscape) {
