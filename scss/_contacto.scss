@@ -15,21 +15,26 @@
 
 /* MAIN - CONTACTO */
 
-.textoContacto{
+.textoEncabezadoContacto{
     margin: 0.5rem 1rem;
 }
 
 .contacto{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: left;
+    align-items: center;
     &__logo{
         margin: 1rem;
         width: 2.5em;
-        display: inline;
         filter: invert(0.9); /* invierte colores del icono, valores de 0 - 1 */
     }
     &__texto{
         margin: 0.5rem;
         padding: 0.5rem 0.25rem 0;
-        display: none;
+        &--cursor{
+            cursor: pointer;
+        }
     }
 }
 

@@ -36,6 +36,12 @@
             margin: 0.2rem;
         }
     }
+    .contacto {
+        display: inline-block;
+        &__texto {
+            display: none;
+        }
+    }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape){
     .calzado__main--layout{
