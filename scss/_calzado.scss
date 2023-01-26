@@ -2,12 +2,15 @@
 
 .calzado__main--layout{
     display: grid;
-    grid-template-rows: repeat( 3, auto);
+    grid-template-rows: repeat( 6, auto);
     grid-row-gap: 1rem;
     grid-template-areas:    
         "main__h1"
+        "main__div--losAngeles"
+        "main__div--puertoRico"
+        "main__div--newYork"
         "main__div--chicago"
-        "main__div--puertoRico";
+        "main__div--broadway";
     justify-items: center;
     align-items: center;
 } /* Layout del main de calzado */
@@ -15,23 +18,43 @@
 
 /* MAIN - CALZADO */
 
-.main__div--chicago{
+.main__div--losAngeles{
     @extend .main__div--color;
-    grid-area: main__div--chicago;
+    grid-area: main__div--losAngeles;
     max-width: 500px;
-} /* Sandalias chicago (negras) */
+} /* Sandalias los Angeles (negras) */
 .main__div--puertoRico{
     @extend .main__div--color;
     grid-area: main__div--puertoRico;
     max-width: 500px;
 } /* Sandalias puerto rico (camel) */
-/* Proyecto futuro .main__div--caribean{
+.main__div--newYork{
     @extend .main__div--color;                
-    grid-area: main__div--caribean;
+    grid-area: main__div--newYork;
     max-width: 500px;
-} */ /* Proyecto futuro */
+} /* Zapatos hombre new york */
+.main__div--chicago{
+    @extend .main__div--color;                
+    grid-area: main__div--chicago;
+    max-width: 500px;
+} /* Botitas chicago */
+.main__div--broadway{
+    @extend .main__div--color;                
+    grid-area: main__div--broadway;
+    max-width: 500px;
+} /* Sandalias decoradas broadway linea glamm */
 .main__img--calzado{
     width: 60vw;
     max-width: 350px;
     margin-bottom: 3rem;
+}
+
+.textoBroadway{
+    font-size: calc(1rem + 1vw);
+    margin-top: -2rem;
+    padding-bottom: 2.5rem;
+}
+
+#indicadoresBroadway{
+    margin-top: -1rem;
 }
