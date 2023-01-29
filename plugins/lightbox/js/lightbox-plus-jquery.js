@@ -11151,3 +11151,9 @@ return jQuery;
 
   return new Lightbox();
 }));
+
+lightbox.option({
+	"disableScrolling": true,
+	"albumLabel": "Imagen %1 de %2",
+	"wrapAround": true
+})
