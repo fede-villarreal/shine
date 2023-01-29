@@ -12,7 +12,7 @@ function demorarLinkWhats() {
     textoWhats.onclick = () => {
         setTimeout ( () => {
             window.open("https://wa.me/5493512252356")
-        }, 750 )
+        }, 500 )
     }
 }
 demorarLinkWhats()
