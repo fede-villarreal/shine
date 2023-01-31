@@ -210,6 +210,8 @@ footer {
       filter: invert(0.9);
       /* invierte colores del icono, valores de 0 - 1 */
       margin-right: 0.3rem; }
+  .div__presentacion--ubicacion {
+    margin-top: 2rem; }
   .div__presentacion span {
     font-style: italic; }
 
@@ -347,19 +349,22 @@ footer {
   /* Tamaño de img y tamaño maximo la imagen escala sin ser cortada para que pueda ajustarse */ }
   .div__arosApliques--background {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: calc(1rem + 1vw);
+    width: 40%;
+    max-width: 12rem;
+    height: 60vw;
+    max-height: 300px;
+    padding: 0 0.5rem;
     padding-bottom: 0.8rem;
     margin: 1rem 0.5rem;
     text-shadow: 1px 1px 5px #ffe134;
     border-radius: 5px; }
   .div__arosApliques--img {
-    margin-bottom: 1rem;
-    padding: 0;
-    width: 50vw;
-    max-width: 250px;
+    width: 90%;
     height: 50vw;
     max-height: 250px;
     object-fit: contain; }
+  .div__arosApliques--figcaption {
+    margin-top: -0.5rem; }
 
 /* LAYOUT OTROS PRODUCTOS */
 .productos__main--layout {

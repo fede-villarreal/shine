@@ -26,19 +26,23 @@
     text-align: center;
     &--background{
         background-color: rgba(0, 0, 0, 0.7);
-        padding: calc(1rem + 1vw);
+        width: 40%;
+        max-width: 12rem;
+        height: 60vw;
+        max-height: 300px;
+        padding: 0 0.5rem;
         padding-bottom: 0.8rem;
         margin: 1rem 0.5rem;
         text-shadow: 1px 1px 5px rgb(255, 225, 52);
         border-radius: 5px;
     } /* contenedor color figure - figcaption (card) */
     &--img{
-        margin-bottom: 1rem;
-        padding: 0;
-        width: 50vw;
-        max-width: 250px;
+        width: 90%;
         height: 50vw;
         max-height: 250px;
         object-fit: contain;
     } /* Tamaño de img y tamaño maximo la imagen escala sin ser cortada para que pueda ajustarse */
+    &--figcaption{
+        margin-top: -0.5rem;
+    }
 }
