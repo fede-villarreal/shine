@@ -169,9 +169,11 @@ footer {
     transform: scale(1.1, 1.1);
     text-shadow: 3px 3px 3px black;
     transition: 0.5s; }
-  footer .logoInstagram {
-    width: 1.5rem;
-    margin: 0 0.25rem 0.25rem 0.4rem; }
+  footer .logoWhatsappFooter {
+    width: 1.5em;
+    margin: 0 0.5rem 0.25rem;
+    filter: invert(0.9);
+    /* invierte colores del icono, valores de 0 - 1 */ }
 
 /* LAYOUT INDEX */
 .index__main--layout {
@@ -479,12 +481,6 @@ footer {
 
 .containerFace {
   margin-bottom: 2rem; }
-
-.logoWhatsappFooter {
-  width: 1.5em;
-  margin: 0 0.5rem 0.25rem;
-  filter: invert(0.9);
-  /* invierte colores del icono, valores de 0 - 1 */ }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 481px) and (orientation: landscape) {
