@@ -440,7 +440,8 @@ footer {
 /* Layout del main de cntacto */
 /* MAIN - CONTACTO */
 .textoEncabezadoContacto {
-  margin: 0.5rem 1rem;
+  font-size: calc(1em + 1vw);
+  margin: 1rem 1rem;
   align-self: center; }
 
 .contacto {
