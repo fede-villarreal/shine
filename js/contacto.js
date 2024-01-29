@@ -11,7 +11,7 @@ const pantalla = screen.width
 function demorarLinkWhats() {
     textoWhats.onclick = () => {
         setTimeout ( () => {
-            window.open("https://wa.me/5493512252356")
+            window.open("https://wa.me/5493513788916")
         }, 500 )
     }
 }
