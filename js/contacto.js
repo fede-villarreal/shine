@@ -29,7 +29,7 @@ demorarLinkInsta()
 function demorarLinkFace() {
     textoFace.onclick = () => {
         setTimeout ( () => {
-            window.open("https://www.facebook.com/ShineDanzaBycb")
+            window.open("https://www.facebook.com/celeste.battiston")
         }, 750 )
     }
 }
